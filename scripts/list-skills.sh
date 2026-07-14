@@ -5,4 +5,4 @@ REPO="$(cd "$(dirname "$0")/.." && pwd)"
 
 cd "$REPO"
 
-find . -name SKILL.md -not -path '*/node_modules/*' | sed 's|^\./||' | sort
+find . -name SKILL.md ! -path '*/node_modules/*' | sed 's|^\./||' | sort
